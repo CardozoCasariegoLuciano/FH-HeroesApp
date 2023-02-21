@@ -1,10 +1,13 @@
-import React from "react"
+import {Publishers} from "../../helpers/getHeroesByPublisher"
+import HeroesList from "../components/HeroesList"
 
 const MarvelPage = () =>{
   return( 
-    <div>
-      <h1>MarvelPage</h1>
-    </div>
+    <>
+      <h1>Marvel Comics</h1>
+      <hr/>
+      <HeroesList publisher={Publishers.MARVEL}/>
+    </>
  )
 }
 

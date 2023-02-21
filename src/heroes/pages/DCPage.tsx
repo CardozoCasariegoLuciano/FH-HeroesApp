@@ -1,11 +1,15 @@
-import React from "react"
+import {Publishers} from "../../helpers/getHeroesByPublisher";
+import HeroesList from "../components/HeroesList";
 
-const DCPage = () =>{
-  return( 
-    <div>
-      <h1>DCPage</h1>
-    </div>
- )
-}
+const DCPage = () => {
 
-export default DCPage
+  return (
+    <>
+      <h1>DC Comics</h1>
+      <hr/>
+      <HeroesList publisher={Publishers.DC}/>
+    </>
+  );
+};
+
+export default DCPage;
